@@ -1,0 +1,130 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+header a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: darkblue;
+  color: lightgrey;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
+  .btn-new {
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0B63F6;
+    font-size: 20px;
+}
+
+.btn-new:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+    height: 200px;
+    width: 50px;
+    font-size: 22px;
+}
+
+.container {
+    margin-left: 25px;
+    margin-right: 15px;
+}
+.logophoto {
+  border:#3C82F8 solid 3px;
+  border-radius: 31px;
+}
+
+.head {
+  border-bottom: #0B63F6 solid 4px;
+}
+
+.consulting {
+  background-image: url('photo/phoppp\(1\)\(1\).png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  border: #fff solid 2px;
+}
+.btn-15 {
+  background: #0B63F6;
+  border: none;
+  z-index: 1;
+}
+.btn-15:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0148c4;
+  border-radius: 5px;
+   box-shadow:
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.5s ease;
+}
+.btn-15:hover {
+  color: #fff;
+}
+.btn-15:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-15:active {
+  top: 2px;
+}
